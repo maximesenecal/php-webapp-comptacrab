@@ -1,0 +1,15 @@
+{
+    "name": "compta/crab",
+    "require": {
+        "imagine/imagine": "0.6.*@dev",
+		"blueimp/jquery-file-upload": "dev-master",
+		"phpoffice/phpexcel": "dev-develop",
+		"phpmailer/phpmailer": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Maxime Senecal",
+            "email": "maxime.senecal.etu@gmail.com"
+        }
+    ]
+}

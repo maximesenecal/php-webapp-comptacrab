@@ -1,0 +1,5 @@
+Ce logiciel de gestion de comptabilité pour associations a été développé par le Centre de Ressources des Associations Boulonnaises (CRAB).
+
+Ce fichier de note sera prochainement mis à jour pour lister les fonctionnalités du logiciel et celles à venir.
+
+Attention, il est possible que cette version puisse comporter des bugs, si cela est le cas, n'hésitez pas à envoyer un mail à maxime-senecal@live.fr afin de régler le problème au plus vite.
