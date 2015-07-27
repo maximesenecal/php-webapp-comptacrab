@@ -4,7 +4,7 @@ $(document).ready(function($){
 	    i = this.selectedIndex;
 		var id = this.options[i].value;
 		
-		$.post("codes_analytiques/postShowDescriptionCodeAnalt.php", {
+		$.post("codes_analytiques/post_1.php", {
 			idCode : id
 		},
 		function(output){

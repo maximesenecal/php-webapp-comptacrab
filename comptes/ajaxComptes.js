@@ -13,6 +13,7 @@ $(document).ready(function($){
 			$('#pushShowDescriptionComptesFavoris').html(output).fadeIn();
 		});
 	});
+
 	$("select#selectComptes").change( function() {
 	    i = this.selectedIndex;
 		var idCompte = this.options[i].value;
@@ -37,8 +38,7 @@ $(document).ready(function($){
 		function(output){
 			$('#pushAddCompteFavori').html(output).fadeIn();
 		});
-		$('#selectComptesFavoris').selectpicker('refresh');
-		$('#listeComptes').selectpicker('refresh');
+		location.reload();
 	});
 	
 	$("button#btnDeleteCompteFavoris").click( function() {
@@ -50,8 +50,6 @@ $(document).ready(function($){
 		function(output){
 			$('#pushDeleteCompte').html(output).fadeIn();
 		});
-		$('#selectComptesFavoris').selectpicker('refresh');
-		$('#listeComptes').selectpicker('refresh');
-		
+		location.reload();	
 	});
 });

@@ -1,7 +1,8 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
     "hash": "308a130f63d7bc9f3f26dfe976bc174a",
     "packages": [
@@ -11,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vkhramtsov/jQuery-File-Upload.git",
-                "reference": "654819250b02f40eb0671ca45d7c62b3eb13ba9b"
+                "reference": "53a53e17b745fda8c549c036afec9abc20a08b08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vkhramtsov/jQuery-File-Upload/zipball/654819250b02f40eb0671ca45d7c62b3eb13ba9b",
-                "reference": "654819250b02f40eb0671ca45d7c62b3eb13ba9b",
+                "url": "https://api.github.com/repos/vkhramtsov/jQuery-File-Upload/zipball/53a53e17b745fda8c549c036afec9abc20a08b08",
+                "reference": "53a53e17b745fda8c549c036afec9abc20a08b08",
                 "shasum": ""
             },
             "type": "library",
@@ -27,8 +28,7 @@
             "authors": [
                 {
                     "name": "Sebastian Tschan",
-                    "homepage": "https://blueimp.net",
-                    "role": "Developer"
+                    "homepage": "https://blueimp.net"
                 }
             ],
             "description": "File Upload widget for jQuery.",
@@ -54,7 +54,7 @@
                 "upload",
                 "widget"
             ],
-            "time": "2014-03-11 06:25:26"
+            "time": "2015-07-27 05:45:31"
         },
         {
             "name": "imagine/imagine",
@@ -119,12 +119,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "8120b3ef8905d33c8b8407017c68e0063656eac3"
+                "reference": "1193eb9d280f046fb3726c0124ea171f216328fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/8120b3ef8905d33c8b8407017c68e0063656eac3",
-                "reference": "8120b3ef8905d33c8b8407017c68e0063656eac3",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/1193eb9d280f046fb3726c0124ea171f216328fd",
+                "reference": "1193eb9d280f046fb3726c0124ea171f216328fd",
                 "shasum": ""
             },
             "require": {
@@ -132,14 +132,16 @@
             },
             "require-dev": {
                 "phpdocumentor/phpdocumentor": "*",
-                "phpunit/phpunit": "4.0.*"
+                "phpunit/phpunit": "4.3.*"
             },
             "type": "library",
             "autoload": {
                 "classmap": [
                     "class.phpmailer.php",
+                    "class.smtp.php",
                     "class.pop3.php",
-                    "class.smtp.php"
+                    "extras/EasyPeasyICS.php",
+                    "extras/ntlm_sasl_client.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -164,7 +166,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2014-04-16 09:04:28"
+            "time": "2015-07-22 12:18:59"
         },
         {
             "name": "phpoffice/phpexcel",
@@ -172,18 +174,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PHPExcel.git",
-                "reference": "c2a277c447ca965bbe030cd83d6b92df95661541"
+                "reference": "4f6d009ba5fad66cdbc48c26fe984858db34e138"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/c2a277c447ca965bbe030cd83d6b92df95661541",
-                "reference": "c2a277c447ca965bbe030cd83d6b92df95661541",
+                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/4f6d009ba5fad66cdbc48c26fe984858db34e138",
+                "reference": "4f6d009ba5fad66cdbc48c26fe984858db34e138",
                 "shasum": ""
             },
             "require": {
                 "ext-xml": "*",
                 "ext-xmlwriter": "*",
                 "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*"
             },
             "type": "library",
             "autoload": {
@@ -204,11 +209,11 @@
                     "name": "Mark Baker"
                 },
                 {
-                    "name": "Franck Lefevre",
-                    "homepage": "http://blog.rootslabs.net"
+                    "name": "Erik Tilt"
                 },
                 {
-                    "name": "Erik Tilt"
+                    "name": "Franck Lefevre",
+                    "homepage": "http://rootslabs.net"
                 }
             ],
             "description": "PHPExcel - OpenXML - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
@@ -221,15 +226,11 @@
                 "xls",
                 "xlsx"
             ],
-            "time": "2014-04-03 16:59:47"
+            "time": "2015-05-24 13:16:04"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "imagine/imagine": 20,
@@ -237,10 +238,8 @@
         "phpoffice/phpexcel": 20,
         "phpmailer/phpmailer": 20
     },
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
 }

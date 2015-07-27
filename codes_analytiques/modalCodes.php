@@ -28,7 +28,7 @@
 								</select>
 							</p>
 							<h4>Description du code analytique sélectionné :</h4>
-							<div id="affDescriptionCode"></div></small>
+							<div id="affDescriptionCode"></div>
 						</div>
                         <div class="row">
                             <div class="col-md-9">
@@ -64,7 +64,7 @@
 						</div>
 						<div class="alert-message alert-message-warning">
 							<h4>Attention</h4>
-							<sp>Veillez à renseigner correctement le <b>nom</b> du code analytique, une fois le <b>nom</b> donné <b>il ne peut plus être modifié</b>.</p>
+							<sp>Veillez à renseigner <b>correctement le nom</b> du code analytique, une fois <b>renseigné, il ne peut plus être modifié</b>.<br>La description peut toujours être modifiée.</p>
 						</div>
                         <button id="btnAddNewCode" type="submit" class="btn btn-success btn-sm">
                 			<span class="glyphicon glyphicon-floppy-disk"></span> Sauvegarder</button>

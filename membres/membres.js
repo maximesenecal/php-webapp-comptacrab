@@ -1,7 +1,6 @@
 $(document).ready(function($){
 	
 	$("button").popover();
-	$("#dateInscriptionNewMembre").datepicker({ dateFormat: 'yy-mm-dd' });
 
     $(window).on('load', function () {
     	$('.selectpicker').selectpicker({

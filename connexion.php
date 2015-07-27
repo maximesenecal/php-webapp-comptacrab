@@ -14,7 +14,7 @@
 	$serveur = '127.0.0.1';
 	$user = 'root';
 	$pass = 'root';
-	$bdd = 'dsucrabmod1';
+	$bdd = 'comptacrab';
 	$port = '8889';
 	
 	try{

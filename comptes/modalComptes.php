@@ -16,18 +16,18 @@
 						Affichage des comptes favoris de l'utilisateur
 					-->
 					<div class="tab-pane fade in active" id="infosCompte">
-			        	<div class="alert-message alert-message-success">
-			            	<h4>Choix d'un compte favori</h4>
-			                <p>
-								<select class="form-control selectpicker" data-live-search="true" id="selectComptesFavoris">
+						<h4>Choix d'un compte favori</h4>
+						<p>
+							<select class="form-control selectpicker" data-live-search="true" id="selectComptesFavoris">
 								<?php
-									if(Auth::islog()){
-										Affichage::favoris_comptes();
-									}
+								if(Auth::islog()){
+									Affichage::favoris_comptes();
+								}
 								?>
-								</select>
-							</p>
-							<h4>Description du compte sélectionné :</h4>
+							</select>
+						</p>
+						<h4>Description du compte sélectionné :</h4>
+						<div class="alert-message alert-message-primary">
 							<div id="pushShowDescriptionComptesFavoris"></div>
 						</div>
 					</div>
@@ -36,20 +36,46 @@
 					-->
 		  			<div class="tab-pane fade" id="addCompte">
 						<div id="pushAddCompteFavori"></div>
-			        	<div class="alert-message alert-message-primary">
-			            	<h4>Choix d'un compte</h4>
+			        	<div class="col-md-4">
+			            	<h4>Comptes classe 6</h4>
 			                <p>
 								<select class="form-control selectpicker" data-live-search="true" id="selectComptes">
-								<?php 
+								<?php
 									if(Auth::islog()){
-										Affichage::comptes();
+										Affichage::comptes(6);
 									}
 								?>
 								</select>
 							</p>
-							<h4>Description du compte sélectionné :</h4>
-							<div id="pushShowDescription"></div></small>
 						</div>
+						<div class="col-md-4">
+			            	<h4>Comptes classe 7</h4>
+			                <p>
+								<select class="form-control selectpicker" data-live-search="true" id="selectComptes">
+								<?php
+									if(Auth::islog()){
+										Affichage::comptes(7);
+									}
+								?>
+								</select>
+							</p>
+						</div>
+						<div class="col-md-4">
+			            	<h4>Comptes classe 8</h4>
+			                <p>
+								<select class="form-control selectpicker" data-live-search="true" id="selectComptes">
+								<?php
+									if(Auth::islog()){
+										Affichage::comptes(8);
+									}
+								?>
+								</select>
+							</p>
+						</div>
+						<h4>Description du compte sélectionné :</h4>
+						<div class="alert-message alert-message-primary">
+							<div id="pushShowDescription"></div>
+			        	</div>
                         <button id="btnAddNewFavoriCompte" type="submit" class="btn btn-success btn-sm">
                 			<span class="glyphicon glyphicon-heart"></span> Sauvegarder ce favori</button>
 					</div>
@@ -94,4 +120,4 @@
         });
 </script>
 <script type="text/javascript" src="js/bootstrap-select.js"></script>
-<script type="text/javascript" src="comptes/comptes.js"></script><!-- javascript file for modal -->
+<script type="text/javascript" src="comptes/ajaxComptes.js"></script><!-- javascript file for modal -->

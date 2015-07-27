@@ -1,20 +1,10 @@
 <?php
 	include 'header.php';
 	if (!Auth::islog()) {
-		echo "
-			<div class=\"container\">
-			<div class=\"row\">
-			<div class=\"col-md-6 col-md-offset-3\">
-	               <div class=\"alert-message alert-message-danger\">
-	                   <h4><span class=\"glyphicon glyphicon-remove\"></span> Oops, vous n'êtes pas connecté.</h4>
-					   <p></p>
-	               </div>
-	    	</div>
-			</div>
-			</div>
-		";
-		exit;
+		include 'no-login.php';
 		include 'footer.php';
+		exit;
+		
 	}
 	
 	/*
@@ -197,7 +187,7 @@
 									        	<i class="glyphicon glyphicon-plus"></i>
 									        	<span>Choisir logo </span>
 									     	    <!-- The file input field used as target for the file upload widget -->
-									    		<input id="fileupload" type="file" name="files[]" multiple>
+									    		<input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple>
 											</span>
 											<h5><span class="glyphicon glyphicon-info-sign"></span> Image .jpg seulement !</h5>
 											<div id="progress" class="progress">
@@ -392,38 +382,15 @@
   Fonction Javascript permettant l'upload de fichier : https://github.com/blueimp/jQuery-File-Upload  
 -->
 <script type="text/javascript" src="infos/updateInfos.js"></script>
-<script type="text/javascript" src="vendor/blueimp/jquery-file-upload/js/vendor/jquery.ui.widget.js"></script>
-<script type="text/javascript" src="vendor/blueimp/jquery-file-upload/js/jquery.fileupload.js"></script>
-<script type="text/javascript" src="vendor/blueimp/jquery-file-upload/js/jquery.iframe-transport.js"></script>
 <script>
 $(function () {
-    'use strict';
-	/*
-	 * URL à modifier pour le nom de domaine (1) le chemin de UploadHandler.php (3)
-	 */
-    var url = window.location.hostname === '' ?
-              '//jquery-file-upload.appspot.com/' : 'vendor/blueimp/jquery-file-upload/server/php/';
-
     $('#fileupload').fileupload({
-        url: url,
         dataType: 'json',
         done: function (e, data) {
             $.each(data.result.files, function (index, file) {
-				//file.name = "<?php echo $user_id; ?>.png";
-                $('<h4/>').text("Chargement terminé.").appendTo('#files');
+                $('<p/>').text(file.name).appendTo(document.body);
             });
-        },
-        progressall: function (e, data) {
-            var progress = parseInt(data.loaded / data.total * 100, 10);
-            $('#progress .progress-bar').css(
-                'width',
-                progress + '%'
-            );
         }
-    }).prop('disabled', !$.support.fileInput)
-        .parent().addClass($.support.fileInput ? undefined : 'disabled');
+    });
 });
 </script>
-<!-- 
-  Fonction Javascript permettant la mise à jour des nouvelles informations renseignées
--->

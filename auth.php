@@ -96,12 +96,13 @@ error_reporting(1);
 	 */ 
 	class Affichage
 	{
-		public static function comptes()
+		public static function comptes($classe)
 		{
 			if (Auth::islog()) {
 				global $cnx;
-				$sql = 'SELECT id_compte, numero, description FROM comptes';
+				$sql = 'SELECT id_compte, numero, description, classe FROM comptes WHERE classe = :classe';
 				$req = $cnx->prepare($sql);
+				$req->bindParam(':classe', $classe, PDO::PARAM_INT);
 				$req->execute();
 	            while ($row = $req->fetch(PDO::FETCH_ASSOC)) {
 					echo "<option value=\"".Securite::html($row['id_compte'])."\">".Securite::html($row['numero'])." - ".Securite::html($row['description'])."</option>";

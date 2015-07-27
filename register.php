@@ -150,50 +150,45 @@ Ecran de connexion avec vérification longueur nom et email en HTML5
 Verification des champs du formulaire avec l'attribut required (sur Chrome Firefox)
 -->
 <div class="container">
-	<div class="jumbotron">
-		<div class="row">
-			<div class="col-md-12">
-				<h2>Formulaire d'inscription</h2>
-				<!--<p>Pour vous inscrire sur notre plateforme, vous devez obligatoirement <strong>accepter</strong> nos conditions d'utilisations.*</p>-->
-				<p>Veuillez remplir toutes les champs pour vous inscrire, vous recevrez un mail de confirmation une fois l'inscription terminée.</p>
-				<form role="form" action="register.php" method="post">
-					<div class="row">
-						<div class="col-md-10">
-							<div class="form-group">
-								<div class="input-group">
-									<span class="input-group-addon">Nom de l'association</span>
-									<input id="newName" name="newName" type="text" class="form-control" placeholder="Notre association" />
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="input-group">
-									<span class="input-group-addon">Adresse mail</span>
-									<input id="newEmail" name="newEmail" type="email" class="form-control" placeholder="Ex : association@benevole.fr" />
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="input-group">
-									<span class="input-group-addon">Vérification mail</span>
-									<input id="validEmail" name="validEmail" type="email" class="form-control" placeholder="Saisir à nouveau la même adresse mail" />
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="input-group">
-									<span class="input-group-addon">Créer un mot de passe de connexion</span>
-									<input id="newPassword" name="newPassword" type="password" class="form-control" placeholder="Choisissez un mot de passe fort" />
-								</div>
-							</div>
-							<!--<div class="checkbox">
-								<label>
-									<input type="checkbox"> J'ai lu et accepté les <a href="#">conditions d'utilisations</a> de la plateforme.
-								</label>
-							</div>-->
-							<h5><span class="glyphicon glyphicon-info-sign"></span> Aucune donnée confidentiel ne sera visible en clair par le Centre de Ressources des Associations Boulonnaises et aucun "Cookies" n'est utilisé à des fins de profilage.</h5>
-							<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-log-in"></span> Créer un compte gratuit</button>
-						</div>
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Formulaire d'inscription</h2>
+			<!--<p>Pour vous inscrire sur notre plateforme, vous devez obligatoirement <strong>accepter</strong> nos conditions d'utilisations.*</p>-->
+			<p>Veuillez remplir toutes les champs pour vous inscrire, vous recevrez un mail de confirmation une fois l'inscription terminée.</p>
+			<form role="form" action="register.php" method="post">
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-addon">Nom de l'association</span>
+						<input id="newName" name="newName" type="text" class="form-control" placeholder="Notre association" />
 					</div>
-				</form>
-			</div>
+				</div>
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-addon">Adresse mail</span>
+						<input id="newEmail" name="newEmail" type="email" class="form-control" placeholder="Ex : association@benevole.fr" />
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-addon">Vérification mail</span>
+						<input id="validEmail" name="validEmail" type="email" class="form-control" placeholder="Saisir à nouveau la même adresse mail" />
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-addon">Créer un mot de passe de connexion</span>
+						<input id="newPassword" name="newPassword" type="password" class="form-control" placeholder="Choisissez un mot de passe fort" />
+					</div>
+				</div>
+						<!--<div class="checkbox">
+							<label>
+								<input type="checkbox"> J'ai lu et accepté les <a href="#">conditions d'utilisations</a> de la plateforme.
+							</label>
+						</div>-->
+				<h5><span class="glyphicon glyphicon-info-sign"></span> Aucune donnée confidentiel ne sera visible en clair par le Centre de Ressources des Associations Boulonnaises et aucun "Cookies" n'est utilisé à des fins de profilage.</h5>
+				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-log-in"></span> Créer un compte gratuit</button>
+
+			</form>
 		</div>
 	</div>
 </div>
