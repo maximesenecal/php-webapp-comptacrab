@@ -1,7 +1,7 @@
-# Compta CRAB
-Application PHP de comptabilité
+# App web "Compta CRAB"
+Application web en PHP de comptabilité pour associations.
 
-Penser à initialiser le composer.phar contenu à la racine avec le terminal avant utilisation en local
+Utilisateurs MacOS : Penser à initialiser le composer.phar contenu à la racine avec le terminal avant utilisation en local
 "php composer.phar install"
 
 
